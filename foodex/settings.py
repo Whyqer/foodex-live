@@ -40,7 +40,6 @@ INSTALLED_APPS = [
 
     #'basic.apps.BasicConfig',
     
-    'rest_framework',
     'django_filters',
     'basic',
 ]
