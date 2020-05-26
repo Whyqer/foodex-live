@@ -1,0 +1,109 @@
+{% extends 'basic/mainpage.html' %}
+{% load static %}
+{% block title %}Коризна {% endblock %}
+
+{% block link %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/style_min(6).css' %}">
+{% endblock %}
+
+{% block body %}
+<body class="profil" >
+
+	{% include 'basic/navbar.html' %}
+
+	<section class="own-restaurant">
+		<div class="container">
+			<div class="own-restaurant__title">
+				ОФОРМЛЕНИЕ ЗАКАЗА
+			</div>
+			<div class="own-restaurant__form">
+				<div class="own-restaurant__form-text">
+					Корзина. Кол-во товаров в корзине: {{order.get_total_cart}}
+				</div>
+				<div class="restaurant-choice__items">
+					<div class="vce">
+						{% for item in items %}
+						<div class="restaurant-choice__item">
+							<div class="restaurant-choice__item-inner">
+								<div class="restaurant-choice__item-restaurant">
+									{{item.menu.name}}
+								</div>
+								<div class="own-restaurant__form-inner1">
+									<div class="own-restaurant__form-input">
+										<div class="own-restaurant__form11">
+											<input type="text" value="{{item.quantity}}" disabled>
+											<input type="text" value="{{item.menu.price|floatformat:0}}" disabled>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+						{% endfor %}						
+					</div>
+					<div class="own-restaurant__form-text">
+							Итого: {{order.get_total_items|floatformat:0}} руб.
+					</div>
+					<div class="70pr">
+						<form action="#" class="own-restaurant__form" method="POST">
+							<div class="own-restaurant__form-inner">
+								<div class="own-restaurant__form-input">
+									<div class="own-restaurant__form-text">
+										Данные
+									</div>
+									{% csrf_token %}
+									<input type="text" readonly value="{{customer.name}}">
+									<input type="tel"  readonly value="{{customer.phone}}">
+									<input type="email" readonly value="{{customer.email}}">
+									<input type="text" readonly value="{{customer.address}}">
+								</div>
+							</div>					
+							<div class="own-restaurant__form-text">
+								Корзина
+							</div>	
+							<div class="restaurant-choice__items">
+								<div class="vce">
+									<div class="restaurant-choice__item11">
+											<div class="own-restaurant__form-inner11">
+												<div class="own-restaurant__form55">
+													<p>
+														<button type="submit" onclick="alert('Ваш заказ передан')">Наличными</button>
+													</p>
+													<img src="{% static 'images/038-cash1.png' %}" alt="">
+												</div>
+											</div>
+										</div>
+
+									<!--PAYPAL -->
+
+									<div id="paypal-button-container">
+									</div>
+									
+									<!---->
+
+								</div>
+							</div>
+						</form>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% include 'basic/footer.html' %}
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=RUB&disable-funding=credit"></script>
+	<script src="{% static 'js/libs.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+	<script>
+		var user = '{{request.user}}'
+		var total = '{{order.get_total_items|floatformat:0}}'
+	 	var menuId = '{{menu.id}}'
+	</script>
+	<script src="{% static 'js/tokenCookie.js' %}"></script>
+	<script src="{% static 'js/pay.js' %}"></script>
+	<script type="text/javascript" src = "{% static 'js/cart.js' %}"></script>
+
+</body>
+{% endblock %}

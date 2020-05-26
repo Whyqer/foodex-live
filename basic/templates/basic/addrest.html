@@ -1,0 +1,55 @@
+{% extends 'basic/mainpage.html' %}
+{% load static %}
+{% block title %}Добавить ресторан {% endblock %}
+
+	
+
+
+	{% block content %}
+	<section class="own-restaurant">
+		<div class="container">
+			<div class="own-restaurant__title">
+				ДОБАВЬ СВОЙ РЕСТОРАН
+			</div>
+			<form class="own-restaurant__form" method="POST" enctype="multipart/form-data" >
+				<div class="own-restaurant__form-inner">
+					<div class="own-restaurant__form-input">
+						<div class="own-restaurant__form-text">
+							Введите необходмимые данные
+						</div>
+						{% csrf_token %}
+						{{form.name}}
+
+						<div class="own-restaurant__form-text">
+							{{form.categories}}
+						</div>
+						
+						{{form.email}}
+						{{form.phone}}
+						{{form.address}}
+						{{form.paypal}}
+					</div>
+					<div class="own-restaurant__form-image" >
+						
+						<img src="{% static 'images/form-img.png' %}" alt="">
+						<input type="file" name="restaurant_pic" accept="image/jpeg,image/png, image/jpg">
+					</div>
+				</div>
+				<button type="submit">Создать</button>
+			</form>
+		</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		var form_fields = document.getElementsByTagName('input')
+		form_fields[1].placeholder='Название ресторана';
+		form_fields[2].placeholder='Электронная почта';
+		form_fields[3].placeholder='Номер телефона';
+		form_fields[4].placeholder='Адрес ресторана';
+		form_fields[5].placeholder='PayPal ID кошелька';
+		for (var field in form_fields){	
+			form_fields[field].className += ' form-control'
+		}
+	</script>
+	{% endblock %}
+	

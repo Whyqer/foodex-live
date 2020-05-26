@@ -1,0 +1,82 @@
+{% extends 'basic/mainpage.html' %}
+{% load static %}
+{% block title %}Cписок ресторанов{% endblock %}
+{% block link %}
+	<link rel="stylesheet" href="{% static 'css/style_min(K).css' %}">
+{% endblock %}
+
+{% block body %}
+<body class="profil">
+	{% include 'basic/navbar.html' %}
+
+	<section class="restaurant-choice">
+		<div class="container">
+			<div class="restaurant-choice__title">
+				ВАШИ РЕСТОРАНЫ
+				</div>
+
+			<section class="restaurant-choice">
+				<div class="container">
+
+					<div class="restaurant-choice__items">
+						{% for r in restaurant %}
+	
+						<div class="restaurant-choice__item">
+							<div class="restaurant-choice__item-inner">
+								<div class="restaurant-choice__item-restaurant">
+									{{r.name}}
+								</div>
+								
+							</div>
+							<div class="restaurant-choice__item-text">
+								{{r.categories}}
+							</div>
+							<button class="restaurant-choice__item-btn">
+								<a href="{% url 'redaction' r.id %}">ИЗМЕНИТЬ</a>
+							</button>
+						</div>
+						{% endfor %}
+					</div>
+
+				</div>
+			</section>
+
+			<!--
+			<div class="restaurant-choice__items">
+				{% for r in restaurant %}
+				<div class="restaurant-choice__item1">
+					<div class="restaurant-choice__item-inner">
+						<div class="restaurant-choice__item-restaurant">
+							{{r.name}}
+						</div>
+
+					</div>
+					<div class="restaurant-choice__item-text">
+						<p>{{r.categories}}</p>
+						<p>{{r.address}}</p>
+					</div>
+					<button><a href="{% url 'restaurant' r.id%}">К ресторану</a></button>
+					<button class="restaurant-choice__item-btn">
+						<a href="{% url 'redaction' r.id %}">ИЗМЕНИТЬ</a>
+					</button>
+				</div>
+				{% endfor %}
+			</div>
+		-->
+
+			<button class="restaurant-choice__btn">
+				<a href="{% url 'addrest' %}">ДОБАВИТЬ ЕЩЕ</a>
+			</button>
+
+		</div>
+
+	</section>
+
+    {% include 'basic/footer.html' %}
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="{% static 'js/libs.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+{% endblock %}

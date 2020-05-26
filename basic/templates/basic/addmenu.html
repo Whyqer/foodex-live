@@ -1,0 +1,73 @@
+{% extends 'basic/mainpage.html' %}
+{% load static %}
+{% block title %} Добавить меню {% endblock %}
+{% block link %}<link rel="stylesheet" href="{% static 'css/style_min(2).css' %}"> {% endblock %}
+
+{% block body %}
+
+<body class="profil" >
+		{% include 'basic/navbar.html' %}
+
+
+<section class="own-restaurant">
+	<div class="container">
+		<div class="own-restaurant__title">
+			Добавить меню
+		</div>
+		
+		<form method = "POST" class="own-restaurant__form" enctype="multipart/fom-data">
+			<div class="own-restaurant__form-inner">
+				<div class="own-restaurant__form-input">
+					{% csrf_token %}
+					<div class="own-restaurant__form-text">
+						{{restaurant.name}}
+					</div>
+					{{form.name}}
+					<div class="own-restaurant__form1">
+						{{form.category}}
+					</div>
+					<div class="own-restaurant__form-inner1">
+						<div class="own-restaurant__form1">
+							<div class="inp2">
+								{{form.weight}}
+								{{form.price}}
+							</div>
+							<textarea type="text" placeholder="Описание, 300 символов" name="description"></textarea>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<p class="own-restaurant__form3">
+				<button type="submit">ДОБАВИТЬ</button>
+			</p>
+		</form>
+
+		<form action="" class="own-restaurant__form7">
+			<div class="own-restaurant__form-inner4">
+				<div class="own-restaurant__form-input">
+					<p class="own-restaurant__form4">
+						<button type="submit">ДОБАВИТЬ ЕЩЕ</button>
+					</p>
+				</div>	
+			</div>
+		</form>
+	</div>		
+</section>
+
+{% include 'basic/footer.html' %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="{% static 'js/libs.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script>
+	var form_fields = document.getElementsByTagName('input')
+		form_fields[1].placeholder='Название';
+		form_fields[2].placeholder='Вес';
+		form_fields[3].placeholder='Цена';
+		form_fields[4].placeholder='Описание';
+
+		for (var field in form_fields){	
+			form_fields[field].className += ' form-control'
+		}
+	</script>
+{% endblock %}
