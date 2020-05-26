@@ -1,0 +1,1231 @@
+html{
+    line-height:1.15;
+    -webkit-text-size-adjust:100%;
+}
+
+body{
+    margin:0;
+}
+
+main{
+    display:block;
+}
+
+h1{
+    font-size:2em;
+    margin:0.67em 0;
+}
+
+hr{
+    box-sizing:content-box;
+    height:0;
+    overflow:visible;
+}
+
+pre{
+    font-family:monospace, monospace;
+    font-size:1em;
+}
+
+a{
+    background-color:transparent;
+    text-decoration: none;
+    color: white;
+}
+
+abbr[title]{
+    border-bottom:none;
+    text-decoration:underline;
+    -webkit-text-decoration:underline dotted;
+    text-decoration:underline dotted;
+}
+
+b,strong{
+    font-weight:bolder;
+}
+
+code,kbd,samp{
+    font-family:monospace, monospace;
+    font-size:1em;
+}
+
+small{
+    font-size:80%;
+}
+
+sub,sup{
+    font-size:75%;
+    line-height:0;
+    position:relative;
+    vertical-align:baseline;
+}
+
+sub{
+    bottom:-0.25em;
+}
+
+sup{
+    top:-0.5em;
+}
+
+img{
+    border-style:none;
+}
+
+button,input,optgroup,select,textarea{
+    font-family:inherit;
+    font-size:100%;
+    line-height:1.15;
+    margin:0;
+}
+
+button,input{
+    overflow:visible;
+}
+
+button,select{
+    text-transform:none;
+}
+
+button,[type="button"],[type="reset"],[type="submit"]{
+    -webkit-appearance:button;
+}
+
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{
+    border-style:none;
+    padding:0;
+}
+
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{
+    outline:1px dotted ButtonText;
+}
+
+fieldset{
+    padding:0.35em 0.75em 0.625em;
+}
+
+legend{
+    box-sizing:border-box;
+    color:inherit;
+    display:table;
+    max-width:100%;
+    padding:0;
+    white-space:normal;
+}
+
+progress{
+    vertical-align:baseline;
+}
+
+textarea{
+    overflow:auto;
+}[type="checkbox"],[type="radio"]{
+    box-sizing:border-box;
+    padding:0;
+}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{
+    height:auto;
+}[type="search"]{
+    -webkit-appearance:textfield;
+    outline-offset:-2px;
+}[type="search"]::-webkit-search-decoration{
+    -webkit-appearance:none;
+}::-webkit-file-upload-button{
+    -webkit-appearance:button;
+    font:inherit;
+}
+
+details{
+    display:block;
+}
+
+summary{
+    display:list-item;
+}
+
+template{
+    display:none;
+}[hidden]{
+    display:none;
+}
+
+.slick-slider{
+    position:relative;
+    display:block;
+    box-sizing:border-box;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-touch-callout:none;
+    -khtml-user-select:none;
+    touch-action:pan-y;
+    -webkit-tap-highlight-color:transparent;
+}
+
+.slick-list{
+    position:relative;
+    display:block;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+}
+
+.slick-list:focus{
+    outline:none;
+}
+
+.slick-list.dragging{
+    cursor:pointer;
+    cursor:hand;
+}
+
+.slick-slider .slick-track,.slick-slider .slick-list{
+    transform:translate3d(0, 0, 0);
+}
+
+.slick-track{
+    position:relative;
+    top:0;
+    left:0;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.slick-track:before,.slick-track:after{
+    display:table;
+    content:'';
+}
+
+.slick-track:after{
+    clear:both;
+}
+
+.slick-loading .slick-track{
+    visibility:hidden;
+}
+
+.slick-slide{
+    display:none;
+    float:left;
+    height:100%;
+    min-height:1px;
+}[dir='rtl']
+
+.slick-slide{
+    float:right;
+}
+
+.slick-slide img{
+    display:block;
+}
+
+.slick-slide.slick-loading img{
+    display:none;
+}
+
+.slick-slide.dragging img{
+    pointer-events:none;
+}
+
+.slick-initialized .slick-slide{
+    display:block;
+}
+
+.slick-loading .slick-slide{
+    visibility:hidden;
+}
+
+.slick-vertical .slick-slide{
+    display:block;
+    height:auto;
+    border:1px solid transparent;
+}
+
+.slick-arrow.slick-hidden{
+    display:none;
+}@font-face{
+    font-family:'Gotham Pro';
+    src:url("../fonts/GothamPro-BoldItalic.eot");
+    src:local("Gotham Pro Bold Italic"),local("GothamPro-BoldItalic"),url("../fonts/GothamPro-BoldItalic.eot?#iefix") format("embedded-opentype"),url("../fonts/GothamPro-BoldItalic.woff") format("woff"),url("../fonts/GothamPro-BoldItalic.ttf") format("truetype");
+    font-weight:bold;
+    font-style:italic;
+}@font-face{
+    font-family:'Gotham Pro';
+    src:url("../fonts/GothamPro-Italic.eot");
+    src:local("Gotham Pro Italic"),local("GothamPro-Italic"),url("../fonts/GothamPro-Italic.eot?#iefix") format("embedded-opentype"),url("../fonts/GothamPro-Italic.woff") format("woff"),url("../fonts/GothamPro-Italic.ttf") format("truetype");
+    font-weight:normal;
+    font-style:italic;
+}@font-face{
+    font-family:'Gotham Pro';
+    src:url("../fonts/GothamPro-Medium.eot");
+    src:local("Gotham Pro Medium"),local("GothamPro-Medium"),url("../fonts/GothamPro-Medium.eot?#iefix") format("embedded-opentype"),url("../fonts/GothamPro-Medium.woff") format("woff"),url("../fonts/GothamPro-Medium.ttf") format("truetype");
+    font-weight:500;
+    font-style:normal;
+}@font-face{
+    font-family:'Gotham Pro';
+    src:url("../fonts/GothamPro-BlackItalic.eot");
+    src:local("Gotham Pro Black Italic"),local("GothamPro-BlackItalic"),url("../fonts/GothamPro-BlackItalic.eot?#iefix") format("embedded-opentype"),url("../fonts/GothamPro-BlackItalic.woff") format("woff"),url("../fonts/GothamPro-BlackItalic.ttf") format("truetype");
+    font-weight:900;
+    font-style:italic;
+}@font-face{
+    font-family:'Gotham Pro';
+    src:url("../fonts/GothamPro-Bold.eot");
+    src:local("Gotham Pro Bold"),local("GothamPro-Bold"),url("../fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"),url("../fonts/GothamPro-Bold.woff") format("woff"),url("../fonts/GothamPro-Bold.ttf") format("truetype");
+    font-weight:bold;
+    font-style:normal;
+}@font-face{
+    font-family:'Gotham Pro Narrow';
+    src:url("../fonts/GothamProNarrow-Bold.eot");
+    src:local("Gotham Pro Narrow Bold"),local("GothamProNarrow-Bold"),url("../fonts/GothamProNarrow-Bold.eot?#iefix") format("embedded-opentype"),url("../fonts/GothamProNarrow-Bold.woff") format("woff"),url("../fonts/GothamProNarrow-Bold.ttf") format("truetype");
+    font-weight:bold;
+    font-style:normal;
+}@font-face{
+    font-family:'Gotham Pro Narrow';
+    src:url("../fonts/GothamProNarrow-Medium.eot");
+    src:local("Gotham Pro Narrow Medium"),local("GothamProNarrow-Medium"),url("../fonts/GothamProNarrow-Medium.eot?#iefix") format("embedded-opentype"),url("../fonts/GothamProNarrow-Medium.woff") format("woff"),url("../fonts/GothamProNarrow-Medium.ttf") format("truetype");
+    font-weight:500;
+    font-style:normal;
+}@font-face{
+    font-family:'Gotham Pro';
+    src:url("../fonts/GothamPro-LightItalic.eot");
+    src:local("Gotham Pro Light Italic"),local("GothamPro-LightItalic"),url("../fonts/GothamPro-LightItalic.eot?#iefix") format("embedded-opentype"),url("../fonts/GothamPro-LightItalic.woff") format("woff"),url("../fonts/GothamPro-LightItalic.ttf") format("truetype");
+    font-weight:300;
+    font-style:italic;
+}@font-face{
+    font-family:'Gotham Pro';
+    src:url("../fonts/GothamPro-Light.eot");
+    src:local("Gotham Pro Light"),local("GothamPro-Light"),url("../fonts/GothamPro-Light.eot?#iefix") format("embedded-opentype"),url("../fonts/GothamPro-Light.woff") format("woff"),url("../fonts/GothamPro-Light.ttf") format("truetype");
+    font-weight:300;
+    font-style:normal;
+}@font-face{
+    font-family:'Gotham Pro';
+    src:url("../fonts/GothamPro-Black.eot");
+    src:local("Gotham Pro Black"),local("GothamPro-Black"),url("../fonts/GothamPro-Black.eot?#iefix") format("embedded-opentype"),url("../fonts/GothamPro-Black.woff") format("woff"),url("../fonts/GothamPro-Black.ttf") format("truetype");
+    font-weight:900;
+    font-style:normal;
+}@font-face{
+    font-family:'Gotham Pro';
+    src:url("../fonts/GothamPro.eot");
+    src:local("Gotham Pro"),local("GothamPro"),url("../fonts/GothamPro.eot?#iefix") format("embedded-opentype"),url("../fonts/GothamPro.woff") format("woff"),url("../fonts/GothamPro.ttf") format("truetype");
+    font-weight:normal;
+    font-style:normal;
+}@font-face{
+    font-family:'Gotham Pro';
+    src:url("../fonts/GothamPro-MediumItalic.eot");
+    src:local("Gotham Pro Medium Italic"),local("GothamPro-MediumItalic"),url("../fonts/GothamPro-MediumItalic.eot?#iefix") format("embedded-opentype"),url("../fonts/GothamPro-MediumItalic.woff") format("woff"),url("../fonts/GothamPro-MediumItalic.ttf") format("truetype");
+    font-weight:500;
+    font-style:italic
+}
+html{
+    box-sizing:border-box;
+}*,*::before,*::after{
+    box-sizing:inherit;
+}
+
+.container{
+    max-width:1721px;
+    margin:0 auto;
+    padding:0 15px;
+}
+
+body{
+    font-family:'Gotham Pro';
+}
+
+.header{
+    height:1994px;
+    background-image:url("../images/header__bg.png");
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-size:cover;
+}
+
+.header__inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header__logo{
+    padding-top:12px;
+}
+
+.header__list{
+    list-style:none;
+    display:flex;
+    align-items:center;
+}
+
+.header__list-item{
+    margin-left:70px;
+}
+
+.header__list-item a{
+    font-size:36px;
+    font-weight:700;
+    color:#ffffff;
+    text-decoration:none;
+    transition:all .3s;
+}
+
+.header__list-item a:hover{
+    border-bottom:3px solid #f85151;
+}
+
+/*изменения начало*/
+
+.header__link{
+    font-size:36px;
+    font-weight:400;
+    color:#000000;
+    padding:16px 57px;
+    background-color:#ffffff;
+    text-decoration:none;
+    border-radius:10px;
+    transition:all .3s;
+    min-width:150px;
+}
+
+/*изменения конец*/
+
+.header__link:hover{
+    background-color:#f7abab;
+}
+
+/*изменения начало*/
+
+.header__link1{
+    font-size:36px;
+    font-weight:400;
+    color:#000000;
+    padding:16px 17px;
+    background-color:#ffffff;
+    text-decoration:none;
+    border-radius:10px;
+    transition:all .3s;
+    width:auto;
+}
+
+.header__link1:hover{
+    background-color:#f7abab;
+}
+
+/*изменения конец*/
+
+.header__title{
+    margin:0 auto;
+    max-width:659px;
+    margin-top:285px;
+    margin-right:0;
+    text-align:right;
+    right:15px;
+    color:#99181e;
+    font-size:120px;
+    font-weight:700;
+}
+
+.header__subtitle{
+    margin-top:29px;
+    margin-right:0;
+    color:#4a090c;
+    font-size:60px;
+    font-weight:700;
+    text-align:right;
+}
+
+.own-restaurant{
+    padding:86px 0 153px 0;
+    background-image:url("../images/watermellon.jpg");
+    background-size:cover;
+}
+
+.own-restaurant__title{
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:57px;
+}
+
+.own-restaurant__form{
+    background-color:#e9e9eb;
+    padding-bottom:46px;
+}
+
+.own-restaurant__form-inner{
+    display:flex;
+    justify-content:space-between;
+}
+
+.own-restaurant__form-text{
+    font-size:36px;
+    font-weight:700;
+    margin:47px 0 56px 56px;
+}
+
+.own-restaurant__form input{
+    width:633px;
+    margin-left:56px;
+    display:block;
+    margin-bottom:52px;
+    border:none;
+    border-radius:10px;
+    font-size:30px;
+    font-weight:700;
+    padding:14px 17px;
+    outline:none;
+}
+
+/*изменения начало*/
+
+.own-restaurant__form select{
+    width:633px;
+    margin-left:56px;
+    display:block;
+    margin-bottom:52px;
+    border:none;
+    border-radius:10px;
+    font-size:30px;
+    font-weight:700;
+    padding:14px 17px;
+    outline:none;
+}
+
+.own-restaurant__form-image1{
+    background-color:#fff;
+    margin-top:-300px;
+    margin-right:100px;
+    margin-bottom:0px;
+    width: 25%;
+    float:right;
+    border:1vmin solid red ;
+    border-radius:12%;
+}
+
+.own-restaurant__form-image1 img{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display:block;
+    padding: 5px;
+}
+
+.own-restaurant__form-image11{
+    box-sizing: inherit;
+    background-color:#fff;
+    margin-top:100px;
+    margin-right:50px;
+    float:center;
+    border:20px solid red;
+    border-radius:12%;
+    height:auto;
+    max-height:500px;
+    display:block;
+    width:auto;
+    max-width:800px;
+}
+
+.own-restaurant__form-image11 img{
+    box-sizing: inherit;
+    display:block;
+    float:center;
+    padding:50px 50px 50px 50px;
+    min-height:200px;
+    max-height:500px;
+    min-width:300px;
+    height:auto;
+}
+
+.own-restaurant__form-image a{
+    width:293px;
+    margin:0 auto;
+    padding-bottom:50px;
+    display:block;
+    text-align:center;
+    font-size:36px;
+    font-weight:700;
+    color:black;
+    text-decoration:none;
+}
+
+.own-restaurant__form button{
+    display:block;
+    margin:0 auto;
+    margin-top:100px;
+    border-radius:10px;
+    border:6px solid #ff0000;
+    background-color:#f58686;
+    padding:30px 40px;
+    color:#ffffff;
+    font-size:48px;
+    font-weight:700;
+}
+
+.own-restaurant__form button:hover{
+    border:6px solid #d19898;
+    color:black;
+}
+
+.own-restaurant__form5 button{
+    border-radius:10%;
+    border:6px solid #9BA9A2;
+    background-color:#9BA9A2;
+    color:green;
+    font-size:35px;
+    font-weight:700;
+    margin-left:150%;
+    margin-top: 20%;
+}
+
+.own-restaurant__form5 button:hover{
+    border:6px solid #d19898;
+    color:black;
+}
+
+.own-restaurant__form55 button{
+    float:center;
+    display:block;
+    margin-top:0px;
+    border-radius:10%;
+    border:6px solid #9BA9A2;
+    background-color:#F58686;
+    padding:10px 15px 10px 15px;
+    color:white;
+    font-size:35px;
+    font-weight:700;
+    margin-right:75px;
+    width:auto;
+    height:auto;
+}
+
+.own-restaurant__form55 button:hover{
+    border:6px solid #d19898;
+    color:black;
+}
+
+.formbat{
+    width:40%;
+}
+
+/*изменения конец*/
+
+.footer{
+    padding-top:193px;
+    height:973px;
+    background-image:url("../images/footer-bg.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.footer__title{
+    color:#181717;
+    text-align:center;
+    font-size:72px;
+    font-weight:700;
+}
+
+.footer__inner{
+    display:flex;
+    justify-content:space-between;
+    width:1412px;
+    margin:0 auto;
+    margin-top:167px;
+}
+
+.footer__contacts-title{
+    font-size:48px;
+    font-weight:500;
+    color:#181717;
+    text-align:center;
+}
+
+.footer__contacts-addres{
+    margin-top:58px;
+    color:#a81515;
+    font-size:44px;
+    font-weight:500;
+}
+
+.footer__contacts-phone{
+    margin-top:58px;
+    font-size:44px;
+    font-weight:500;
+    text-align:center;
+}
+
+.footer__contacts-phone a{
+    color:#a81515;
+    text-decoration:none;
+}
+
+.footer__registratsia-title{
+    font-size:48px;
+    font-weight:500;
+    color:#181717;
+    text-align:center;
+}
+
+.footer__registratsia-btn{
+    margin-top:107px;
+    display:block;
+    color:#ffffff;
+    font-size:36px;
+    font-weight:700;
+    text-decoration:none;
+    text-align:center;
+    padding:29px 31px;
+    background-color:#b83938;
+    border-radius:10px;
+}
+
+.footer__registratsia-btn:hover{
+    background-color:#b83938;
+    color:#000;
+}
+
+.profil .header{
+    background-image:none;
+    background-color:#919394;
+    height:130px;
+}
+
+.profil-our{
+    background-image:url("../images/watermellon.jpg");
+    background-size:cover;
+    padding:145px 0 145px 0;
+}
+
+.profil-our__title{
+    font-size:40px;
+    font-weight:700;
+}
+
+.profil-our__form{
+    margin-top:55px;
+    background-color:#e9e9eb;
+    padding-bottom:55px;
+}
+
+.profil-our__form-title{
+    font-size:42px;
+    font-weight:500;
+    padding-top:64px;
+    padding-left:54px;
+    padding-bottom:68px;
+}
+
+.profil-our__form label{
+    display:block;
+    font-size:30px;
+    font-weight:700;
+    color:rgba(0,0,0,0.55);
+    padding-left:54px;
+    padding-bottom:21px;
+}
+
+.profil-our__form input{
+    width:356px;
+    margin-left:54px;
+    border:none;
+    border-bottom:2px solid rgba(0,0,0,0.55);
+    background-color:inherit;
+    font-size:36px;
+    font-weight:500;
+    margin-bottom:46px;
+    outline:none;
+}
+
+.profil-our__form-btn{
+    display:block;
+    margin:0 auto;
+    margin-top:374px;
+    border:1px solid #ff0000;
+    border-radius:10px;
+    padding:36px 56px;
+    background-color:#f69797;
+    font-size:36px;
+    font-weight:700;
+    color:#fff;
+}
+
+.profil-our__form-btn:hover{
+    color:black;
+}
+
+.restaurant-choice{
+    background-image:url("../images/watermellon.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-bottom:100px;
+}
+
+.restaurant-choice__title{
+    padding-top:89px;
+    font-size:40px;
+    font-weight:700;
+}
+
+.restaurant-choice__items{
+    margin-top:68px;
+    display:flex;
+    flex-direction:column;
+}
+
+/*изменения начало*/
+
+.restaurant-choice__item{
+    background-color:white;
+    padding-bottom:10px;
+    margin-left:50px;
+    margin-bottom:50px;
+    margin-right:50px;
+    width:26%;
+    height:238px;
+    float:left;
+    border-radius:7%;
+}
+
+.restaurant-choice__item-inner{
+    width:440px;
+}
+
+/*изменения конец*/
+
+.restaurant-choice__item-restaurant{
+    font-size:30px;
+    font-weight:700;
+    margin:36px 0 0 17px;
+}
+
+/*изменения начало*/
+
+.restaurant-choice__item-circle{
+    width:85px;
+    height:77px;
+    border-radius:50%;
+    background-color:#CB6B6B;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:12px 23px 0 0;
+}
+
+.restaurant-choice__item-circle-num{
+    color:#000E07;
+    font-weight:700;
+    font-size:35px;
+}
+
+.restaurant-choice__item-circle1{
+    margin:auto;
+    width:120px;
+    height:77px;
+    border-radius:10%;
+    background-color:#9BA9A2;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:70px  20px 0 0;
+    float:right;
+}
+
+.restaurant-choice__item-circle-num1{
+    color:#000E07;
+    font-weight:700;
+    font-size:35px;
+}
+
+/*изменения конец*/
+
+.restaurant-choice__item-text{
+    margin:74px 0 0 14px;
+    font-weight:400;
+    font-size:30px;
+}
+
+.restaurant-choice__item-btn{
+    margin-top:58px;
+    margin-right:23px;
+    margin-left:auto;
+    display:block;
+    width:274px;
+    height:107px;
+    background-color:#b83938;
+    border:none;
+    border-radius:10px;
+    text-align:center;
+    font-size:36px;
+    font-weight:700;
+    color:#fff;
+}
+
+.restaurant-choice__item-btn:hover{
+    color:#000;
+}
+
+.restaurant-choice__btn{
+    display:block;
+    margin:0 auto;
+    margin-top:82px;
+    width:320px;
+    height:115px;
+    border-radius:10px;
+    border:6px solid #ff0000;
+    background-color:#f58686;
+    font-size:25px;
+    font-weight:700;
+    color:#fff;
+}
+
+.restaurant-choice__btn:hover{
+    color:#000;
+}
+
+.services{
+    padding:100px 0;
+    background-color:#e9e9eb;
+}
+
+.services__title{
+    color:#2c2c2c;
+    font-size:50px;
+    font-weight:700;
+    text-align:center;
+}
+
+.services__box{
+    text-align:center;
+}
+
+.services__box-inner{
+    display:flex;
+    justify-content:space-around;
+    margin-top:140px;
+}
+
+.services__box img{
+    width:210px;
+    height:180px;
+}
+
+.services__box-title{
+    height:85px;
+    margin-top:45px;
+    font-size:38px;
+    font-weight:700;
+}
+
+.services__box-text{
+    margin-top:30px;
+    color:#151515;
+    font-size:34px;
+    font-weight:400;
+}@media (max-width: 1620px){
+
+}@media (max-width: 1480px){
+    .header{
+        height:900px;
+    }
+    .header__list-item a{
+        font-size:25px;
+    }
+    .header__link{
+        font-size:25px;
+    }
+    .header__title{
+        font-size:97px;
+        margin-top:200px;
+    }
+    .own-restaurant__form-image img{
+        padding:50px 150px 100px 150px;
+    }
+    .own-restaurant__form-image{
+        margin-top:143px;
+        margin-bottom:48px;
+    }
+}@media (max-width: 1480px){
+    .footer__inner{
+        width:1200px;
+    }
+}@media (max-width: 1366px){
+    .own-restaurant__form input{
+        width:540px;
+        margin-left:56px;
+        display:block;
+        margin-bottom:22px;
+        border:none;
+        border-radius:10px;
+        font-size:20px;
+        font-weight:700;
+        padding:14px 17px;
+    }
+    .own-restaurant__form-image a{
+        width:238px;
+        margin:0 auto;
+        display:block;
+        text-align:center;
+        font-size:21px;
+        font-weight:700;
+        color:black;
+        text-decoration:none;
+    }
+    .own-restaurant__form-image img{
+        padding:50px 70px 50px 70px;
+    }
+    .own-restaurant__form-image{
+        margin-bottom:8px;
+    }
+    .profil .profil-our__form-btn{
+        margin-top:100px;
+    }
+}@media (max-width: 1280px){
+    .header__list-item a{
+        font-size:20px;
+    }
+    .header__link{
+        font-size:20px;
+    }
+    .header__title{
+        max-width:570px;
+        margin-top:100px;
+        font-size:85px;
+    }
+    .footer__inner{
+        width:100%;
+        justify-content:space-around;
+    }
+    .footer__contacts-title,.footer__registratsia-title{
+        font-size:30px;
+    }
+    .footer__contacts-addres{
+        font-size:30px;
+        margin-top:35px;
+    }
+    .footer__contacts-phone{
+        font-size:30px;
+        margin-top:35px;
+    }
+    .footer__registratsia-btn{
+        margin-top:45px;
+    }
+}@media (max-width: 1090px){
+    .header{
+        height:700px;
+    }
+    .header__list-item{
+        margin-left:50px;
+    }
+    .header__list-item a{
+        font-size:18px;
+    }
+    .header__link{
+        font-size:18px;
+    }
+    .own-restaurant__form-text{
+        text-align:center;
+    }
+    .own-restaurant__form input{
+        margin:0 auto;
+        margin-bottom:30px;
+    }
+    .own-restaurant__form-image{
+        margin:0 auto;
+        margin-top:35px;
+    }
+    .own-restaurant__form-image img{
+        margin:0 auto;
+        padding:50px 70px 50px 70px;
+    }
+    .services__box-inner{
+        flex-direction:column;
+    }
+    .services__box-text{
+        margin-top:0;
+    }
+    .services__box{
+        margin-bottom:50px;
+    }
+}@media (max-width: 990px){
+    .header__nav{
+        display:none;
+        position:absolute;
+        top:100px;
+        width:100%;
+        left:0;
+        text-align:center;
+        background-color:#e9e9eb;
+        z-index:5;
+    }
+    .header__list-item a{
+        display:block;
+        padding:10px 0;
+        color:#2c2c2c;
+    }
+    .header__logo img{
+        width:80%;
+    }
+    .header__link{
+        display:none;
+    }
+    .header__btn{
+        width:30px;
+        height:20px;
+        position:relative;
+    }
+    .header__btn span{
+        position:absolute;
+        width:100%;
+        height:2px;
+        background-color:#fff;
+        top:9px;
+    }
+    .header__btn::before,.header__btn::after{
+        position:absolute;
+        content:'';
+        width:100%;
+        height:2px;
+        background-color:#fff;
+    }
+    .header__btn::before{
+        bottom:0;
+    }
+    .header__btn::after{
+        top:0;
+    }
+    .header__list{
+        flex-direction:column;
+        
+    }.footer{
+        padding-top:75px;
+        height:700px;
+    }
+    .footer__title{
+        font-size:50px;
+    }
+    .footer__contacts-addres{
+        font-size:29px;
+    }
+    .footer__inner{
+        flex-direction:column;
+        margin-top:65px;
+    }
+    .footer__contacts-addres{
+        text-align:center;
+    }
+    .footer__registratsia{
+        margin-top:50px;
+    }
+    .profil .profil-our__form label{
+        font-size:20px;
+    }
+    .profil .profil-our__form input{
+        font-size:25px;
+        margin-bottom:30px;
+    }
+    .profil .profil-our__form-title{
+        font-size:35px;
+    }
+    .profil .profil-our__form-btn{
+        margin-top:60px;
+    }
+}@media (max-width: 680px){
+    .own-restaurant__form-text{
+        font-size:30px;
+        font-weight:700;
+        margin:34px 0 36px 25px;
+        text-align:left;
+    }
+}@media (max-width: 590px){
+    .own-restaurant__title{
+        font-size:30px;
+        font-weight:700;
+        margin-bottom:35px;
+        text-align:center;
+    }
+    .own-restaurant__form-text{
+        font-size:25px;
+        font-weight:700;
+        margin:34px 0 36px 25px;
+        text-align:center;
+    }
+    .own-restaurant__form input{
+        width:460px;
+        margin-bottom:20px;
+    }
+    .own-restaurant__form-image img{
+        margin:0 auto;
+        padding:40px 60px 50px 60px;
+        width:65%;
+    }
+}@media (max-width: 502px){
+    .own-restaurant__form input{
+        width:320px;
+        margin-bottom:20px;
+        font-size:14px;
+    }
+    .own-restaurant__form-image a{
+        width:163px;
+        margin:0 auto;
+        display:block;
+        text-align:center;
+        font-size:14px;
+        font-weight:700;
+        color:black;
+        text-decoration:none;
+    }
+}@media (max-width: 460px){
+    .header__title{
+        max-width:387px;
+        margin-top:67px;
+        font-size:63px;
+    }
+    .header__subtitle{
+        font-size:50px;
+    }
+    .header{
+        height:540px;
+    }
+}
+.dropbtn {
+
+    border: none;
+    cursor: pointer;
+    
+    font-size:32px;font-weight:500;color:white;padding:16px 40px;background-color:#FF5050;text-decoration:none;border-radius:10px;transition:all .3s;
+}
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    color:black;
+    border-radius:10px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border:6px solid #d19898;color:black;
+    font-size:26px;font-weight:400;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
